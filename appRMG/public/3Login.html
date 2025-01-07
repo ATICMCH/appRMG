@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <link rel="stylesheet" href="./styles/3Login.css">
+    <link rel="icon" href="./images/icon.ico">
+</head>
+<body>
+    <section class="ui segment grey" id="login-form">
+        <form class="ui big form">
+            <div class="ui stacked segment">
+                <div class="ui error message big" id="login-error-message"></div>
+                <div class="field">
+                    <h4 class="h4">Welcome to</h4>
+                    <div class="image3">
+                        <img src="./images/image2.png" alt="image" width="300" height="100"/>   
+                    </div>
+                    <div class="ui left icon input big">
+                        <i class="mail icon"></i>
+                        <input type="email" placeholder="Email" id="login-email" />
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input big">
+                        <i class="lock icon"></i>
+                        <input type="password" placeholder="Password" id="login-password" />
+                    </div>
+                </div>
+                <button class="ui button blue fluid big" id="login-btn">Iniciar Sesión </button>
+            </div>
+        </form>
+        <div class="ui message small big">No tienes cuenta aún? <a id="need-an-account-btn" href="2Register.html">Registrate</a></div>
+    </section>
+    <script src="./js/firebase.js" type="module"></script>
+    <script src="./js/login.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Usuario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/2Register.css">
+    <link rel="icon" href="./images/icon.ico">
+</head>
+<body>
+    <section class="ui segment grey signup-form" id="signup-form">
+        <form class="ui form big">
+            <div class="ui stacked segment">
+                <div class="ui error message" id="error-message"></div>
+                <div class="field">
+                    <h4 class="h4">Welcome to</h4>
+                    <div class="image3">
+                        <img src="./images/image2.png" alt="image" width="300" height="100"/>   
+                    </div>
+                    <div class="ui left icon input big">
+                        <i class="mail icon"></i>
+                        <input type="email" placeholder="Email" id="email" /></div>
+                    </div>
+                    <div class="field">
+                        <div class="ui left icon input big">
+                        <i class="lock icon"></i>
+                        <input type="password" placeholder="Password" id="password" /></div>
+                    </div>
+                <button class="ui button blue fluid big" id="signup-btn">Crear Cuenta</button>
+            </div>
+        </form>
+        <div class="ui message small big">Ya tienes una cuenta? <a id="have-an-account-btn" href="3Login.html">Iniciar Sesión</a></div>
+    </section>
+    <script src="./js/firebase.js" type="module"></script>
+    <script src="./js/Register1.js" type="module"></script>
+</body>
+</html>

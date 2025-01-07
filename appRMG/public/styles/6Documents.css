@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.card {
+    margin: 10px auto;
+    border: 1px solid #031032;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.card:hover {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    cursor: pointer;
+}
+.center {
+    margin-bottom: 20px;
+    background-color: #b5b6b7;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+}
+.center h {
+    color: rgb(52, 50, 50);
+    text-shadow: 1px 2px #7d7c80;
+}
+.center button {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: right;
+}
+.center button:hover {
+    background-color: #ffffff;
+}
+.buttonF {
+    text-align:center;
+}
+.ui.segment.big {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    border: none;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1em; 
+    font-weight: bold; 
+}
+.meta {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1em; 
+    color: #000000;
+    font-weight: bold; 
+    margin-left: 1em;
+}
+
+.ui.button.blue.tiny {
+    background-color: #5143f0;
+    margin-left: auto; 
+}
+
+.ui.button.blue.tiny:hover {
+    background-color: #ffad06;
+    transition: 1s;
+}
+.ui.button.blue{
+    background-color: #5143f0;
+}
+.ui.button.blue:hover{
+    background-color:#ffad06;
+    transition: 1s;
+}
+.register {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ui.form{
+    text-align: center;
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    .center1 {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    .center1 i {
+    margin-bottom: 10px;
+    }
+    .center1 input {
+    text-align: left;
+    }
+    .card {
+    padding: 15px;
+    }
+    .register button {
+    width: 100%;
+    padding: 15px;
+    }
+}

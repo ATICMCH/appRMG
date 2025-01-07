@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/6Documents.css">
+    <link rel="icon" href="./images/icon.ico">
+</head>
+<body>
+    <div class="card">
+        <div class="ui segment big" id="user-profile">
+            <div class="meta" id="user-email"></div>
+            <button class="ui button blue tiny" id="logout-btn">Hacerlo mas tarde</button>
+        </div>
+
+            <div class="center">
+                <button onclick="document.location='5Aval.html'">
+                    <i class='bx bx-chevron-left'></i>
+                </button>
+                <h>Subir documentos</h>
+            </div>
+        <form id="document-form" class="ui form">
+            <div class="field">
+                <label for="document1">Adjuntar DNI inquilino</label>
+                <input type="file" name="1.DNIinquilino" id="1.DNIinquilino" multiple required>
+            </div>
+
+            
+            <div class="field">
+                <label for="document2">Adjuntar DNI Aval</label>
+                <input type="file" name="2.DNIAval" id="2.DNIAval" multiple required>
+            </div>
+                
+            <div class="field">
+                <label for="document3">Nóminas </label>
+                <input type="file" name="3.Nominas" id="3.Nominas" multiple required>
+            </div>
+            <div class="field">
+                <label for="document4">Carta universidad </label>
+                <input type="file" name="4.Cartauniversidad" id="4.Cartauniversidad" multiple required>
+            </div>
+            <div class="buttonF" >
+                <button class="ui button blue" type="submit">Finalizar</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/firebase.js" type="module"></script>
+    <script src="js/Documents.js" type="module"></script>
+</body>
+</html>
